@@ -31,26 +31,26 @@
 }
 
 .contact-buttons {
-  margin-top: 20px; /* ระยะห่างจากข้อความก่อนหน้า */
+  margin-top: 20px; 
   display: flex;
-  gap: 20px; /* ระยะห่างระหว่างปุ่ม */
+  gap: 20px; 
 }
 
 .circle-button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 50px; /* ขนาดของปุ่ม */
-  height: 50px; /* ขนาดของปุ่ม */
-  border-radius: 50%; /* ทำให้เป็นวงกลม */
-  background-color: #fff; /* สีพื้นหลัง */
-  color: #611292; /* สีไอคอน */
-  text-decoration: none; /* ไม่มีเส้นใต้ */
-  transition: background-color 0.3s; /* เอฟเฟกต์เมื่อเลื่อนเมาส์ */
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%; 
+  background-color: #fff; 
+  color: #611292;
+  text-decoration: none; 
+  transition: background-color 0.3s; 
 }
 
 .circle-button:hover {
-  background-color: rgb(215, 186, 240); /* เปลี่ยนสีเมื่อเลื่อนเมาส์ */
+  box-shadow: 0 0 10px rgb(229, 147, 147), 0 0 20px rgb(149, 68, 187);
 }
 
 @keyframes slide-up {
@@ -65,7 +65,7 @@
 }
 
 .greeting-content {
-  animation: slide-up 3s ease forwards; /* ใช้ animation ที่สร้างขึ้น */
+  animation: slide-up 3s ease forwards; 
 }
 
 @keyframes wave {
@@ -85,7 +85,7 @@
 }
 
 .greet-icon {
-  display: inline-block; /* เพื่อให้สามารถใช้ transform ได้ */
-  animation: wave 1s infinite; /* การโบกมือเป็น loop */
+  display: inline-block;
+  animation: wave 1s infinite; 
 }
 

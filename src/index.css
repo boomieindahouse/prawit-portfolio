@@ -13,6 +13,7 @@
   --bar-color: rgb(25, 25, 25);
   --backgroud-color: rgba(32, 32, 32, 1);
   --highlight-color: rgba(255, 51, 102, 1);
+  --btn-color: rgba(156, 110, 202, 0.715);
 }
 
 body {

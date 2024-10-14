@@ -1,14 +1,45 @@
+.intro {
+    position: relative; /* ทำให้สามารถจัดตำแหน่งลูกภายในได้ */
+    padding-bottom: 100px; 
+}
+
 .intro h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px; 
-    letter-spacing: 1px; 
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
-.intro p {
-    font-size: 1.4rem; 
-    line-height: 1.6; 
-    margin: 10px 0; 
+.intro-head h1 {
+  font-size: 3rem;
 }
 
+.intro-content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
 
+.contact-button {
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 40px;
+}
+
+.contact-button .btn {
+    background-color: #bd88f2;
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 10px;
+    border-radius: 5px; 
+    text-decoration: none;
+    font-size: 18px; 
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-button .btn:hover {
+    background-color: #bd88f2;
+    box-shadow: 0 0 10px rgb(229, 147, 147), 0 0 20px rgb(149, 68, 187);
+}
 

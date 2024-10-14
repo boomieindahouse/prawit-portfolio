@@ -1,6 +1,6 @@
 import avt_img2 from '../../assets/img/avt-working2.png';
 import Star from '../bg/Stars';
-import '../Homepage/Greeting.css';
+import '../Homepage/Intro.css';
 
 function Intro() {
     return (
@@ -10,7 +10,7 @@ function Intro() {
                 <div className="col-md-5 intro-img d-flex justify-content-center align-items-center">
                     <img src={avt_img2} alt="Intro illustration" width="600" />
                 </div>
-                <div className="col-md-7 d-flex align-items-center"> {/* เพิ่ม d-flex align-items-center ที่นี่ */}
+                <div className="col-md-7 d-flex align-items-center">
                     <div className="intro-me">
                         <div className="intro-head">
                             <h1>LET ME <span className='greet-name'>INTRODUCE</span> MY SELF</h1>
@@ -26,6 +26,11 @@ function Intro() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="contact-button text-center mt-4">
+                <a href="mailto:prawitsanat@hotmail.com" className="btn">
+                Get In Touch
+                </a>
             </div>
         </section>
     );
