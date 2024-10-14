@@ -1,23 +1,39 @@
-.loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* ให้เต็มความสูงของหน้าจอ */
-    background-color: var(--backgroud-color); /* ใช้สีพื้นหลังที่ต้องการ */
-    color: #ffffff; /* สีข้อความ */
-  }
-  
-  .spinner {
-    border: 8px solid rgba(255, 255, 255, 0.3);
-    border-top: 8px solid #ffffff; /* สีของส่วนที่หมุน */
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
+.loader-container {
+    position: fixed; /* คงที่ที่ตำแหน่ง */
+    top: 0;
+    left: 0;
+    width: 100vw; /* ความกว้างเต็มหน้าจอ */
+    height: 100vh; /* ความสูงเต็มหน้าจอ */
+    display: flex; /* จัดเรียงภายใน */
+    justify-content: center; /* จัดกลางในแนวนอน */
+    align-items: center; /* จัดกลางในแนวตั้ง */
+    background-image: radial-gradient(circle, rgb(71, 71, 71), rgba(25, 25, 25, 1)); /* เพิ่มพื้นหลังเพื่อให้มองเห็น */
+    z-index: 9999; /* ให้อยู่เหนือองค์ประกอบอื่น */
+}
+
+.loader {
+    color: #fff;
+    font-family: Consolas, Menlo, Monaco, monospace;
+    font-weight: bold;
+    font-size: 100px;
+    opacity: 0.8;
+}
+
+.loader:before {
+    content: "{";
+    display: inline-block;
+    animation: pulse 0.4s alternate infinite ease-in-out;
+}
+
+.loader:after {
+    content: "}";
+    display: inline-block;
+    animation: pulse 0.4s 0.3s alternate infinite ease-in-out;
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+}
