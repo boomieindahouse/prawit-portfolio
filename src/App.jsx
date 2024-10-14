@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Greeting from './components/Homepage/Greeting';
@@ -10,11 +10,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 function App() {
-  const [loading, setLoading] = useState(true); // สร้าง state สำหรับการโหลด
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false); // ซ่อนหน้าโหลดหลังจาก 3 วินาที
+      setLoading(false);
     }, 3000);
 
     return () => clearTimeout(timer);
@@ -23,8 +23,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {loading ? ( // แสดง Loader ถ้า loading เป็น true
-          <Loader /> 
+        {loading ? (
+          <Loader />
         ) : (
           <>
             <Navbar />
