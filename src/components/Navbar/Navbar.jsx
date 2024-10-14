@@ -23,7 +23,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={`navbar d-flex justify-content-between align-items-center px-4 ${isScrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar d-flex justify-content-between align-items-center px-5 ${isScrolled ? 'scrolled' : ''}`}>
       <div className="logo-container">
         <img src={logo} alt="Logo" className="navbar-brand" />
       </div>

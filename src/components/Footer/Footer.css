@@ -1,15 +1,16 @@
 .footer {
-  background-color: var(--bar-color);
+  background-color: rgba(25, 25, 25, 0.7); /* ปรับพื้นหลังให้โปร่งแสง */
+  backdrop-filter: blur(10px); /* ทำให้เบลอ */
   position: relative;
   bottom: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
   padding: 1rem;
   font-weight: 300;
   font-size: 13pt;
+  color: var(--primary-color); /* ให้ข้อความเป็นสีหลัก */
 }
 
 .footer p {
-    margin: 0; /* กำจัด margin ของ <p> ใน footer */
+  margin: 0; /* กำจัด margin ของ <p> ใน footer */
 }
-

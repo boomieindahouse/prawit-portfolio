@@ -7,7 +7,7 @@
 }
 
 .navbar.scrolled {
-  background: rgba(54, 54, 54, 0.5); /* สีเทาที่โปร่งแสงเมื่อเลื่อน */
+  background: rgba(85, 47, 109, 0.308); /* สีเทาที่โปร่งแสงเมื่อเลื่อน */
   backdrop-filter: blur(80px); /* เบลอพื้นหลัง */
 }
 
@@ -20,7 +20,7 @@
   color: #fff;
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
 }
 

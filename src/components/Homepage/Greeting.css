@@ -1,9 +1,11 @@
-.greeting-content {
-  padding: 100px;
+.greeting {
+ padding: 100px;
+ height: 90vh;
 }
 
 .greeting-image img {
-  max-width: 600px;
+  max-width: 650px;
+  padding-right: 10px;
   height: auto;
 }
 
@@ -18,8 +20,37 @@
   }
 }
 
+.greet-text {
+  display: flex;
+  align-items: baseline;
+}
+
 .greet-name {
   color: var(--highlight-color);
+  margin-left: 10px;
+}
+
+.contact-buttons {
+  margin-top: 20px; /* ระยะห่างจากข้อความก่อนหน้า */
+  display: flex;
+  gap: 20px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+.circle-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* ขนาดของปุ่ม */
+  height: 50px; /* ขนาดของปุ่ม */
+  border-radius: 50%; /* ทำให้เป็นวงกลม */
+  background-color: #fff; /* สีพื้นหลัง */
+  color: #611292; /* สีไอคอน */
+  text-decoration: none; /* ไม่มีเส้นใต้ */
+  transition: background-color 0.3s; /* เอฟเฟกต์เมื่อเลื่อนเมาส์ */
+}
+
+.circle-button:hover {
+  background-color: rgb(215, 186, 240); /* เปลี่ยนสีเมื่อเลื่อนเมาส์ */
 }
 
 @keyframes slide-up {
@@ -57,3 +88,4 @@
   display: inline-block; /* เพื่อให้สามารถใช้ transform ได้ */
   animation: wave 1s infinite; /* การโบกมือเป็น loop */
 }
+

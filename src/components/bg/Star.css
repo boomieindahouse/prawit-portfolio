@@ -1,0 +1,41 @@
+.star-container {
+  position: fixed; /* ใช้ fixed เพื่อให้ดาวอยู่ที่ตำแหน่งที่กำหนด */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* ใช้ความสูง 100vh เพื่อให้ดาวเต็มหน้าจอ */
+  overflow: hidden;
+  z-index: -1; /* ทำให้ดาวอยู่ด้านหลัง */
+}
+
+
+.star {
+  position: absolute;
+  background-color: #fff; 
+  border-radius: 50%; 
+  opacity: 0.8; /* ความโปร่งใส */
+  animation: twinkle 3s infinite ease-in-out alternate; /* เพิ่มเอฟเฟกต์ระยิบระยับ */
+}
+
+@keyframes twinkle {
+  0% {
+      transform: scale(0.9);
+      opacity: 0.6;
+  }
+  100% {
+      transform: scale(1.1);
+      opacity: 1;
+  }
+}
+
+.star:nth-child(odd) {
+  width: 3px;
+  height: 3px;
+  animation-duration: 4s; /* ทำให้ดาวขนาดเล็กกว่าบางดวง */
+}
+
+.star:nth-child(even) {
+  width: 6px;
+  height: 6px;
+  animation-duration: 2s; /* ทำให้ดาวขนาดใหญ่กว่าบางดวง */
+}

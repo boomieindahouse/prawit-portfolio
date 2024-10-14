@@ -7,7 +7,7 @@
     display: flex; /* จัดเรียงภายใน */
     justify-content: center; /* จัดกลางในแนวนอน */
     align-items: center; /* จัดกลางในแนวตั้ง */
-    background-image: radial-gradient(circle, rgb(71, 71, 71), rgba(25, 25, 25, 1)); /* เพิ่มพื้นหลังเพื่อให้มองเห็น */
+    background-image: radial-gradient(circle, rgb(42, 26, 62), rgba(25, 25, 25, 1));
     z-index: 9999; /* ให้อยู่เหนือองค์ประกอบอื่น */
 }
 
