@@ -1,0 +1,15 @@
+.greeting-image img {
+    max-width: 600px;
+    height: auto;
+  }
+  
+  .intro-content {
+      h1 {
+          font-size: 70pt;
+          font-weight: bold;
+          font-family: "Josefin Sans", sans-serif;
+      }
+      p {
+          font-size: 20pt;
+      }
+  }

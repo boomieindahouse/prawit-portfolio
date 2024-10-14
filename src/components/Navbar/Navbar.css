@@ -1,0 +1,33 @@
+.navbar {
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(54, 54, 54, 0.5); /* สีเทาที่โปร่งแสงเมื่อเลื่อน */
+  backdrop-filter: blur(80px); /* เบลอพื้นหลัง */
+}
+
+.logo-container img {
+  width: 80px; 
+  height: auto;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.navbar .nav-link:hover {
+  color: var(--hover-color);
+}
+
+.navbar .nav-link.active {
+  color: var(--hover-color);
+}

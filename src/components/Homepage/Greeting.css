@@ -1,0 +1,59 @@
+.greeting-content {
+  padding: 100px;
+}
+
+.greeting-image img {
+  max-width: 600px;
+  height: auto;
+}
+
+.greeting-content {
+  h1 {
+    font-size: 70pt;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  p {
+    font-size: 20pt;
+  }
+}
+
+.greet-name {
+  color: var(--highlight-color);
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px); /* เริ่มต้นที่ด้านล่าง */
+    opacity: 0; /* เริ่มต้นที่โปร่งใส */
+  }
+  100% {
+    transform: translateY(0); /* จบที่ตำแหน่งเดิม */
+    opacity: 1; /* จบที่โปร่งใสปกติ */
+  }
+}
+
+.greeting-content {
+  animation: slide-up 3s ease forwards; /* ใช้ animation ที่สร้างขึ้น */
+}
+
+@keyframes wave {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: rotate(0deg); /* ปกติ */
+  }
+  10% {
+    transform: rotate(15deg); /* ยกมือขึ้น */
+  }
+  30% {
+    transform: rotate(-10deg); /* ลดมือลง */
+  }
+}
+
+.greet-icon {
+  display: inline-block; /* เพื่อให้สามารถใช้ transform ได้ */
+  animation: wave 1s infinite; /* การโบกมือเป็น loop */
+}

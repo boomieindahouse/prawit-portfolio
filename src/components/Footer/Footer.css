@@ -1,0 +1,15 @@
+.footer {
+  background-color: var(--bar-color);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  padding: 1rem;
+  font-weight: 300;
+  font-size: 13pt;
+}
+
+.footer p {
+    margin: 0; /* กำจัด margin ของ <p> ใน footer */
+}
+
