@@ -24,7 +24,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Star /> {/* ย้าย Star ไว้ที่ด้านบนสุด */}
+        <Star />
         {loading ? (
           <Loader />
         ) : (

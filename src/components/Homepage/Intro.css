@@ -1,6 +1,6 @@
 .intro {
-    position: relative; /* ทำให้สามารถจัดตำแหน่งลูกภายในได้ */
-    padding-bottom: 100px; 
+  position: relative;
+  padding-bottom: 100px;
 }
 
 .intro h1 {
@@ -19,27 +19,70 @@
 }
 
 .contact-button {
-    position: absolute; 
-    bottom: 20px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    padding: 40px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 40px;
 }
 
 .contact-button .btn {
-    background-color: #bd88f2;
-    color: white;
-    padding: 10px 20px; 
-    border: none;
-    border-radius: 10px;
-    border-radius: 5px; 
-    text-decoration: none;
-    font-size: 18px; 
-    transition: box-shadow 0.3s ease;
+  background-color: #bd88f2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: box-shadow 0.3s ease;
 }
 
 .contact-button .btn:hover {
-    background-color: #bd88f2;
-    box-shadow: 0 0 10px rgb(229, 147, 147), 0 0 20px rgb(149, 68, 187);
+  background-color: #bd88f2;
+  box-shadow: 0 0 10px rgb(229, 147, 147), 0 0 20px rgb(149, 68, 187);
 }
 
+/* Responsive Media Queries */
+
+/* ปรับให้ซ่อนเมนูในหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .intro-img img {
+    display: none;
+  }
+
+  .intro-head h1 {
+    font-size: 2.3rem;
+  }
+
+  .intro-content p {
+    font-size: 16pt;
+  }
+
+  .contact-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px;
+  }
+
+  .contact-button .btn {
+    background-color: #bd88f2;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: box-shadow 0.3s ease;
+  }
+}

@@ -13,7 +13,7 @@ function Intro() {
                 <div className="col-md-7 d-flex align-items-center">
                     <div className="intro-me">
                         <div className="intro-head">
-                            <h1>LET ME <span className='greet-name'>INTRODUCE</span> MY SELF</h1>
+                            <h1>LET ME <span className='greet-name'>INTRODUCE</span> MYSELF</h1>
                         </div>
                         <div className="intro-content">
                             <p>I started as a student in the field of Electrical Control, and as I began learning to write Arduino code, I became interested in programming.</p>

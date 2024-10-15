@@ -7,12 +7,12 @@
 }
 
 .navbar.scrolled {
-  background: rgba(85, 47, 109, 0.308); /* สีเทาที่โปร่งแสงเมื่อเลื่อน */
-  backdrop-filter: blur(80px); /* เบลอพื้นหลัง */
+  background: rgba(85, 47, 109, 0.308);
+  backdrop-filter: blur(80px);
 }
 
 .logo-container img {
-  width: 80px; 
+  width: 80px;
   height: auto;
 }
 
@@ -20,8 +20,10 @@
   color: #fff;
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
+  margin: 0 15px; 
+  padding: 10px 0; 
 }
 
 .navbar .nav-link:hover {
@@ -29,5 +31,84 @@
 }
 
 .navbar .nav-link.active {
-  color: var(--hover-color);
+  color: var(--highlight-color);
+}
+
+/* Responsive Media Queries */
+
+/* ปรับให้ซ่อนเมนูในหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+  .navbar {
+    background-color: rgb(36, 31, 50);
+  }
+
+  .navbar.scrolled {
+    background: rgb(36, 31, 50);
+    backdrop-filter: unset;
+  }
+
+  .logo-container img {
+    width: 50px;
+  }
+
+  nav .d-flex {
+    display: none !important; 
+    align-items: center;
+  }
+
+  nav .show-menu {
+    display: flex !important; 
+    align-items: end;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgb(36, 31, 50); 
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0; 
+    transform: translateY(-10px); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  .show-menu .nav-link {
+    position: relative; 
+    padding: 10px 0; 
+  }
+  
+  .show-menu .nav-link:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  nav .show-menu.active {
+    opacity: 1;
+    transform: translateY(0); 
+    pointer-events: auto; 
+  }
+
+  .menu-toggle {
+    display: block; 
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+/* หน้าจอขนาดใหญ่จะแสดงเมนูปกติ */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none; 
+  }
+
+  nav .show-menu {
+    display: flex; 
+    opacity: 1; 
+    transform: translateY(0); 
+    pointer-events: auto; 
+  }
+
+  nav .d-flex {
+    display: flex !important; 
+  }
 }

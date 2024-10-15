@@ -16,16 +16,24 @@ function Greeting() {
             {/* เพิ่มปุ่ม Contact */}
             <div className="contact-buttons">
               <a href="https://github.com/boomieindahouse" className="circle-button" target="_blank" rel="noopener noreferrer">
-                <Icon icon="akar-icons:github-fill" width="24" height="24" />
+                <div className="icon-wrapper">
+                  <Icon icon="akar-icons:github-fill" />
+                </div>
               </a>
               <a href="https://www.linkedin.com/in/prawitsanat-prapananyosanan-5ab977327/" className="circle-button" target="_blank" rel="noopener noreferrer">
-                <Icon icon="akar-icons:linkedin-fill" width="24" height="24" />
+                <div className="icon-wrapper">
+                  <Icon icon="akar-icons:linkedin-fill" />
+                </div>
               </a>
               <a href="https://x.com/boomiebehumble" className="circle-button" target="_blank" rel="noopener noreferrer">
-                <Icon icon="akar-icons:twitter-fill" width="24" height="24" />
+                <div className="icon-wrapper">
+                  <Icon icon="akar-icons:twitter-fill" />
+                </div>
               </a>
               <a href="https://www.instagram.com/boomieindahouse" className="circle-button" target="_blank" rel="noopener noreferrer">
-                <Icon icon="akar-icons:instagram-fill" width="24" height="24" />
+                <div className="icon-wrapper">
+                  <Icon icon="akar-icons:instagram-fill" />
+                </div>
               </a>
             </div>
           </div>

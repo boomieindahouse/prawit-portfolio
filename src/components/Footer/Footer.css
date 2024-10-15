@@ -14,3 +14,13 @@
 .footer p {
   margin: 0; /* กำจัด margin ของ <p> ใน footer */
 }
+
+
+/* Responsive Media Queries */
+
+/* ปรับให้ซ่อนเมนูในหน้าจอขนาดเล็ก */
+@media (max-width: 768px){
+  .footer p {
+    font-size: 9pt;
+  }
+}

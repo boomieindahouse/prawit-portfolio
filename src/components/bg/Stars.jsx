@@ -1,7 +1,7 @@
 import './Star.css'; // นำเข้า CSS สำหรับดาว
 
 const Star = () => {
-  const starCount = 100; // จำนวนดาวที่ต้องการแสดง
+  const starCount = 40 // จำนวนดาวที่ต้องการแสดง
 
   // ฟังก์ชันสำหรับสุ่มตำแหน่งและขนาด
   const randomPositionAndSize = () => ({

@@ -5,20 +5,25 @@ import { useEffect, useState } from 'react';
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleScroll = () => {
-    const offset = window.scrollY; // ตรวจสอบตำแหน่งการเลื่อน
+    const offset = window.scrollY; 
     if (offset > 100) { 
-      setIsScrolled(true); // เปลี่ยนค่า isScrolled เป็น true
+      setIsScrolled(true); 
     } else {
-      setIsScrolled(false); // เปลี่ยนค่า isScrolled เป็น false
+      setIsScrolled(false);
     }
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); 
+  };
+
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll); // เพิ่ม event listener
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll); // ลบ event listener เมื่อ component ถูกทำลาย
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -27,7 +32,8 @@ function Navbar() {
       <div className="logo-container">
         <img src={logo} alt="Logo" className="navbar-brand" />
       </div>
-      <div className="d-flex gap-5">
+      <div className="menu-toggle" onClick={toggleMenu}>☰</div>
+      <div className={`show-menu ${isMenuOpen ? 'active' : ''}`}>
         <NavLink to="/" className="nav-link" activeClassName="active">Home</NavLink>
         <NavLink to="/portfolio" className="nav-link" activeClassName="active">Portfolio</NavLink>
         <NavLink to="/about" className="nav-link" activeClassName="active">About</NavLink>

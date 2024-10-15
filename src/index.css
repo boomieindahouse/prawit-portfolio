@@ -40,6 +40,6 @@ body {
 
 /* กำหนดสีพื้นหลังของ scrollbar track (ส่วนที่อยู่หลัง thumb) */
 ::-webkit-scrollbar-track {
-  background: rgb(65, 16, 117); /* เปลี่ยนสีที่นี่ */
+  background: rgba(89, 26, 183, 0.868); /* เปลี่ยนสีที่นี่ */
 }
 
