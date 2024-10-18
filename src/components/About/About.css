@@ -1,0 +1,72 @@
+.row{
+  padding-top: 80px;
+}
+
+.about-me {
+  padding-left: 150px !important;
+}
+
+.me-img img {
+  max-width: 650px;
+  padding-right: 10px;
+  height: auto;
+}
+
+.about-me h1 {
+    font-size: 40pt;
+    font-weight: 400;
+}
+
+.about-me p {
+  font-size: 20pt;
+  font-weight: 300;
+}
+
+.skills {
+  font-size: 26pt;
+  padding-top: 100px;
+}
+
+/* ตั้งค่า style สำหรับ skillset */
+.skillset {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 0px;
+}
+
+.skill-card {
+  margin-bottom: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #faf8fa08 !important;
+  padding: 40px;
+  text-align: center;
+  border: 2px solid rgba(91, 21, 172, 0.747);
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(91, 21, 172, 0.9);
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.card-title {
+  font-size: 16pt;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #9da5ab;
+}

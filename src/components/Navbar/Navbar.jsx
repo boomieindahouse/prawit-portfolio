@@ -35,8 +35,8 @@ function Navbar() {
       <div className="menu-toggle" onClick={toggleMenu}>☰</div>
       <div className={`show-menu ${isMenuOpen ? 'active' : ''}`}>
         <NavLink to="/" className="nav-link" activeClassName="active">Home</NavLink>
-        <NavLink to="/portfolio" className="nav-link" activeClassName="active">Portfolio</NavLink>
         <NavLink to="/about" className="nav-link" activeClassName="active">About</NavLink>
+        <NavLink to="/portfolio" className="nav-link" activeClassName="active">Portfolio</NavLink>
       </div>
     </nav>
   );
