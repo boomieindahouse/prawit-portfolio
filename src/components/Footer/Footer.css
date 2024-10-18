@@ -1,5 +1,5 @@
 .footer {
-  background-color: rgba(25, 25, 25, 0.7); /* ปรับพื้นหลังให้โปร่งแสง */
+  background-color: rgba(25, 25, 25, 0.42); /* ปรับพื้นหลังให้โปร่งแสง */
   backdrop-filter: blur(10px); /* ทำให้เบลอ */
   position: relative;
   bottom: 0;

@@ -22,21 +22,25 @@
   font-weight: 300;
 }
 
-.skills {
+.tech-header {
   font-size: 26pt;
   padding-top: 100px;
 }
 
-/* ตั้งค่า style สำหรับ skillset */
-.skillset {
+/* ตั้งค่า style สำหรับ techset */
+.techset {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding-top: 0px;
+  gap: 10px;
+  padding-top: unset;
 }
 
-.skill-card {
+.tech-card {
   margin-bottom: 20px;
+}
+
+.card-body {
+  position: relative;
 }
 
 .card {
@@ -52,18 +56,36 @@
 .card:hover {
   transform: translateY(-10px);
   border-color: rgba(91, 21, 172, 0.9);
+  background-color: #b772dfa4 !important;
 }
 
-.skill-icon {
+.tech-icon {
   width: 60px;
   height: 60px;
   object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .tech-icon {
+  opacity: 0.5;
 }
 
 .card-title {
   font-size: 16pt;
-  margin-top: 15px;
   font-weight: 600;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-title {
+  opacity: 1;
+  color: rgb(223, 163, 241);
+  font-size: 15pt;
+  font-weight: 400;
 }
 
 .card-text {

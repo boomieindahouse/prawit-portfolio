@@ -31,9 +31,9 @@ function App() {
           <>
             <Navbar />
             <Routes>
-              <Route path="/" element={<><Greeting /><Footer /></>} />
-              <Route path="/about" element={<About />} />
-              <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/" element={<><Greeting /><Footer /></>} />
+              <Route path="/about" element={<><About /><Footer /></>} />
+              <Route path="/portfolio" element={<><Portfolio /><Footer /></>} />
             </Routes>
           </>
         )}

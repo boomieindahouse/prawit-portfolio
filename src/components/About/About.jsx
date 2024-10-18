@@ -1,5 +1,6 @@
 import avtprogramming from '../../assets/img/avt-programming.png';
 import { skillsData } from '../Constants/Constants';
+import { toolsData } from '../Constants/Constants';
 import '../About/About.css';
 
 function About() {
@@ -16,15 +17,31 @@ function About() {
         </div>
 
          {/* ส่วนแสดง Skills */}
-        <p className='skills text-center'>Skills</p>
-        <div className="skillset row w-100 justify-content-center">
+        <p className='tech-header text-center'>Skills</p>
+        <div className="techset row w-100 justify-content-center">
           {skillsData.map((skill, index) => (
-            <div key={index} className="col-md-3 col-4 text-center skill-card">
+            <div key={index} className="col-md-3 col-4 text-center tech-card">
               <div className="card shadow-sm">
                 <div className="card-body">
-                  <img src={skill.icon} alt={skill.name} className="skill-icon" />
+                  <img src={skill.icon} alt={skill.name} className="tech-icon" />
+                  <h5 className="card-title mt-3">{skill.name}</h5>
                   {/* <h5 className="card-title mt-3">{skill.name}</h5>
                   <p className="card-text">{skill.level}</p> */}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ส่วนแสดง Tools */}
+        <p className='tech-header text-center'>Tools</p>
+        <div className="techset row w-100 justify-content-center">
+          {toolsData.map((tool, index) => (
+            <div key={index} className="col-md-3 col-4 text-center tech-card">
+              <div className="card shadow-sm">
+                <div className="card-body">
+                  <img src={tool.icon} alt={tool.name} className="tech-icon" />
+                  <h5 className="card-title mt-3">{tool.name}</h5>
                 </div>
               </div>
             </div>

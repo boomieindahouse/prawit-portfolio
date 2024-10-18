@@ -35,10 +35,35 @@ export const skillsData = [
       icon: "../src/assets/icons/flutter.png",
     },
     {
-      name: "Figma",
+      name: "Bootstrap",
       level: "Beginner",
-      icon: "../src/assets/icons/figma.png",
+      icon: "../src/assets/icons/bootstrap.png",
     }
   ];  
+
+export const toolsData = [
+  {
+    name: "Windows",
+    icon: "../src/assets/icons/windows.png",
+  },
+  {
+    name: "vsCode",
+    icon: "../src/assets/icons/vscode.png",
+  },
+  {
+    name: "Git",
+    icon: "../src/assets/icons/git.png",
+  },
+  {
+    name: "Figma",
+    level: "Beginner",
+    icon: "../src/assets/icons/figma.png",
+  },
+  {
+    name: "Eclipse",
+    level: "Beginner",
+    icon: "../src/assets/icons/eclipse.png",
+  }
+];
   
   
