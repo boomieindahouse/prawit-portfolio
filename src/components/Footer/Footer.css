@@ -24,3 +24,10 @@
     font-size: 9pt;
   }
 }
+
+/* ipad pro res */
+@media (min-width: 1024px) and (max-width: 1366px) {
+ .footer {
+  position: fixed;
+ }
+}

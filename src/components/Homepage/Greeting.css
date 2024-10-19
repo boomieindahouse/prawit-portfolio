@@ -4,7 +4,7 @@
 }
 
 .greeting-image img {
-  max-width: 650px;
+  max-width: 620px;
   padding-right: 10px;
   height: auto;
 }
@@ -92,7 +92,7 @@
 /* Responsive Media Queries */
 @media (max-width: 768px) {
   .greeting {
-    height: 100vh;
+    height: 80vh;
     padding: 20px; 
     justify-content: center;
     display: flex;
@@ -100,6 +100,10 @@
     align-items: center; 
   }
 
+  .greeting-content {
+    text-align: center;
+  }
+  
   .greeting-content h1 {
     font-size: 40pt;
   }
@@ -108,13 +112,74 @@
     font-size: 16pt;
   }
 
+  .greet-text {
+    display: inline;
+  }
+
+  .contact-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
   .circle-button {
     width: 30px; 
     height: 30px;
   }
 
+  .greeting-image {
+    display: flex;
+    justify-content: center;
+  }
+  
   .greeting-image img {
     width: 100%; 
     max-width: 350px;
+  }
+}
+
+/* ipad mini, air responsive */
+@media (min-width: 768px) and (max-width: 1370px) {
+  .greeting {
+    height: 30vh;
+    padding: 50px;
+  }
+
+  .greeting-content {
+    text-align: start;
+  }
+
+  .greeting-content h1 {
+    font-size: 40pt;
+  }
+
+  .greeting-content p{
+    font-size: 14pt;
+  }
+
+  .contact-buttons {
+    display: flex;
+    justify-content: start;
+  }
+
+  .greeting-image img {
+    width: 100%; 
+    max-width: 350px;
+  }
+}
+
+/* ipad pro res */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .greeting {
+    height: 40vh;
+    padding: 90px;
+  }
+  
+  .greeting-image img {
+    width: 100%; 
+    max-width: 600px;
+  }
+
+  .greeting-content h1 {
+    font-size: 60pt;
   }
 }
