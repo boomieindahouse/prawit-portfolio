@@ -1,6 +1,7 @@
 import avtprogramming from '../../assets/img/avt-programming.png';
-import { skillsData } from '../Constants/Constants';
-import { toolsData } from '../Constants/Constants';
+import { skillsData, toolsData, languageSkills } from '../Constants/Constants';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import '../About/About.css';
 
 function About() {
@@ -16,7 +17,7 @@ function About() {
           <img src={avtprogramming} alt="avatar-programming" />
         </div>
 
-         {/* ส่วนแสดง Skills */}
+        {/* ส่วนแสดง Skills */}
         <p className='tech-header text-center'>Skills</p>
         <div className="techset row w-100 justify-content-center">
           {skillsData.map((skill, index) => (
@@ -25,9 +26,8 @@ function About() {
                 <div className="card-body">
                   <img src={skill.icon} alt={skill.name} className="tech-icon" />
                   <h5 className="card-title mt-3">{skill.name}</h5>
-                  {/* <h5 className="card-title mt-3">{skill.name}</h5>
-                  <p className="card-text">{skill.level}</p> */}
                 </div>
+                <progress value={skill.level} max="100" className="progress-bar"></progress>
               </div>
             </div>
           ))}
@@ -46,6 +46,35 @@ function About() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* ส่วนแสดง language */}
+        <p className='tech-header text-center'>Languages</p>
+        <div className="language-container">
+          <div className="language-details text-center d-flex justify-content-center">
+            <div className="col-md-6 col-10 d-flex justify-content-center text-center skill-item">
+              <div className="card skill-card">
+                <div className="language-info">
+                  <p>Thai: <span className="language-level">Native</span></p>
+                  <p>English:</p>
+                </div>
+                <div className="language-icons">
+                  {languageSkills.map((skill, index) => (
+                    <div key={index} className="icon-container">
+                      <CircularProgressbar
+                        value={skill.level}
+                        styles={buildStyles({
+                          pathColor: '#573c97', // กำหนดสีที่ต้องการ
+                          trailColor: '#d6d6d6', // สีพื้นหลังของหลอด
+                        })}
+                      />
+                      <img src={skill.icon} alt={skill.name} className="skill-icon" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

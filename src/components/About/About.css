@@ -92,3 +92,87 @@
   font-size: 14px;
   color: #9da5ab;
 }
+
+/* progress bar */
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+.card:hover .progress-bar {
+  opacity: 0;
+  transition: opacity 0.2s ease; 
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #573c97; 
+  border-radius: 5px;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: #6a1b9a; 
+  border-radius: 5px;
+}
+
+/* language circular */
+.language-container {
+  margin-top: 30px;
+}
+
+.language-details {
+  margin-bottom: 20px;
+}
+
+.language-info { 
+  text-align: left; 
+  color: white;
+  font-size: 16pt;
+}
+
+.language-level {
+  font-weight: 300; 
+}
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  margin: 10px; 
+  width: 80%; /* หรือค่าที่คุณต้องการ เช่น 50% */
+  max-width: 500px; /* ลดขนาดสูงสุดของการ์ด */
+}
+
+.language-icons {
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 40px; 
+}
+
+.icon-container {
+  position: relative;
+  width: 70px; 
+  height: 70px; 
+}
+
+.skill-icon {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 30px; 
+  height: 30px; 
+}
+
+.skill-label {
+  font-size: 1rem;
+  color: #666; 
+}
