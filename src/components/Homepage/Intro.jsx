@@ -1,8 +1,28 @@
+import { useEffect, useRef, useState } from 'react';
 import avt_img2 from '../../assets/img/avt-working2.png';
 import Star from '../bg/Stars';
 import '../Homepage/Intro.css';
 
 function Intro() {
+    const introMeRef = useRef(null); // สร้าง ref สำหรับ .intro-me
+    const [isVisible, setIsVisible] = useState(false);
+
+    const handleScroll = () => {
+        const rect = introMeRef.current.getBoundingClientRect(); // ตรวจสอบตำแหน่งของ intro-me
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            setIsVisible(true); // ถ้าเข้ามาใน viewport ให้ตั้งค่าเป็น true
+        } else {
+            setIsVisible(false); // ถ้าออกจาก viewport ให้ตั้งค่าเป็น false
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll); // ฟังการเลื่อน
+        return () => {
+            window.removeEventListener('scroll', handleScroll); // ลบ event listener เมื่อ component ถูก unmount
+        };
+    }, []);
+
     return (
         <section className="intro d-flex align-items-center justify-content-between min-vh-60">
             <Star />
@@ -11,7 +31,7 @@ function Intro() {
                     <img src={avt_img2} alt="Intro illustration" width="600" />
                 </div>
                 <div className="col-md-7 d-flex align-items-center">
-                    <div className="intro-me">
+                    <div className={`intro-me ${isVisible ? 'visible' : ''}`} ref={introMeRef}>
                         <div className="intro-head">
                             <h1>LET ME <span className='greet-name'>INTRODUCE</span> MYSELF</h1>
                         </div>
@@ -29,7 +49,7 @@ function Intro() {
             </div>
             <div className="contact-button text-center mt-4">
                 <a href="mailto:prawitsanat@hotmail.com" className="btn">
-                Get In Touch
+                    Get In Touch
                 </a>
             </div>
         </section>

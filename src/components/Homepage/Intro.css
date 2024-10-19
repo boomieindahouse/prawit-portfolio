@@ -43,8 +43,19 @@
   box-shadow: 0 0 10px rgb(229, 147, 147), 0 0 20px rgb(149, 68, 187);
 }
 
-/* Responsive Media Queries */
+.intro-me {
+  opacity: 0;
+  transform: translateX(20px); 
+  transition: opacity 0.5s ease, transform 1s ease; 
+}
 
+.intro-me.visible {
+  opacity: 1; 
+  transform: translateX(0);
+}
+
+
+/* Responsive Media Queries */
 /* ปรับให้ซ่อนเมนูในหน้าจอขนาดเล็ก */
 @media (max-width: 768px) {
   .intro {
