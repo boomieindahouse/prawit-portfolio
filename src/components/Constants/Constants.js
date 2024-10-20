@@ -138,7 +138,7 @@ export const portfolios = [
       "Dynamic Movie Data: The app fetches real-time data from the TMDb API, ensuring that users always see the latest popular movies and genres.",
     ],
     desc: `This Movie Recommendation App It is a Flutter application that helps users discover popular movies and filter them by genre.`,
-    github: "https://github.com/TheMasz/Project-Ecommerce",
+    github: "https://github.com/boomieindahouse/movies_recommend",
   },
   {
     id: 3,
@@ -159,7 +159,7 @@ export const portfolios = [
       "Able to make payments for room bookings through the website. It was created using the AltoRouter framework for routing.",
     ],
     desc: `This project is for resort management.`,
-    github: "https://github.com/TheMasz/ourgram",
+    github: "https://github.com/boomieindahouse/resort-main",
   }
 ];
 
