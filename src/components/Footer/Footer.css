@@ -1,6 +1,6 @@
 .footer {
-  background-color: rgba(25, 25, 25, 0.42); /* ปรับพื้นหลังให้โปร่งแสง */
-  backdrop-filter: blur(10px); /* ทำให้เบลอ */
+  background-color: rgba(25, 25, 25, 0.42); 
+  backdrop-filter: blur(10px); 
   position: relative;
   bottom: 0;
   left: 0;
@@ -8,11 +8,11 @@
   padding: 1rem;
   font-weight: 300;
   font-size: 13pt;
-  color: var(--primary-color); /* ให้ข้อความเป็นสีหลัก */
+  color: var(--primary-color);
 }
 
 .footer p {
-  margin: 0; /* กำจัด margin ของ <p> ใน footer */
+  margin: 0;
 }
 
 
@@ -25,9 +25,3 @@
   }
 }
 
-/* ipad pro res */
-@media (min-width: 1024px) and (max-width: 1366px) {
- .footer {
-  position: fixed;
- }
-}
