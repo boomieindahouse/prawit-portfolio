@@ -7,7 +7,7 @@ import '../About/About.css';
 function About() {
   return (
     <section className="about-container">
-      <div className="row w-100 mt-5 d-flex justify-content-center align-items-center min-vh-50">
+      <div className="row w-100 mt-3 d-flex justify-content-center align-items-center min-vh-50 no-gutters">
         <div className="about-me col-md-7">
           <h1 className="about-top d-flex justify-content-center">Know Who I Am</h1>
           <p>Hi, I&apos;m<span className='greet-name'>Prawitsanat Prapananyosanan</span>, a 4th-year Computer Engineering student at Rajamangala University of Technology Isan. I’m passionate about frontend development and UX/UI design. I enjoy crafting visually appealing and user-friendly interfaces.</p>
@@ -52,7 +52,7 @@ function About() {
         <p className='tech-header text-center'>Languages</p>
         <div className="language-container">
           <div className="language-details text-center d-flex justify-content-center">
-            <div className="col-md-6 col-10 d-flex justify-content-center text-center skill-item">
+            <div className="col-md-10 col-10 d-flex justify-content-center text-center skill-item">
               <div className="card skill-card">
                 <div className="language-info">
                   <p>Thai: <span className="language-level">Native</span></p>

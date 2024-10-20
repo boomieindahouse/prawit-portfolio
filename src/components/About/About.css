@@ -176,3 +176,66 @@ progress[value]::-moz-progress-bar {
   font-size: 1rem;
   color: #666; 
 }
+
+
+/* Responsive Media Queries */
+/* sm display responsive */
+@media (max-width: 767px) {
+  .no-gutters {
+    --bs-gutter-x: 0 !important; 
+    --bs-gutter-y: 0 !; 
+  }
+  
+  .about-me {
+    padding-left: 10px !important; 
+    width: 90% !important;
+  }
+
+  .about-me h1 {
+    font-size: 25pt;
+  }
+  
+  .about-me p {
+    text-align: center;
+    font-size: 14pt;
+  }
+
+  .tech-card {
+    width: 300px !important;
+  }
+
+  .me-img {
+    display: none;
+  }
+
+  .icon-container {
+    position: relative;
+    width: 50px; 
+    height: 50px; 
+  }
+
+  .skill-icon {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 20px; 
+    height: 20px; 
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1340px) {
+  .no-gutters {
+    --bs-gutter-x: 0 !important; 
+    --bs-gutter-y: 0; 
+  }
+  
+  .about-me {
+    padding-left: 10px !important; 
+    width: 90% !important;
+  }
+  
+  .me-img  {
+    display: none;
+  }
+}
