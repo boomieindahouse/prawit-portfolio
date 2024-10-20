@@ -44,6 +44,7 @@
 }
 
 .card {
+  max-width: 500px !important;
   border-radius: 10px;
   background-color: #faf8fa08 !important;
   padding: 40px;
@@ -146,8 +147,8 @@ progress[value]::-moz-progress-bar {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   padding: 20px;
   margin: 10px; 
-  width: 80%; /* หรือค่าที่คุณต้องการ เช่น 50% */
-  max-width: 500px; /* ลดขนาดสูงสุดของการ์ด */
+  width: 80%;
+  max-width: 500px; 
 }
 
 .language-icons {
@@ -183,8 +184,17 @@ progress[value]::-moz-progress-bar {
 @media (max-width: 767px) {
   .no-gutters {
     --bs-gutter-x: 0 !important; 
-    --bs-gutter-y: 0 !; 
+    --bs-gutter-y: 0 !important; 
   }
+
+  .row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .0) !important;
+    margin-top: var(--bs-gutter-y);
+}
   
   .about-me {
     padding-left: 10px !important; 
@@ -208,10 +218,15 @@ progress[value]::-moz-progress-bar {
     display: none;
   }
 
+  .tech-header {
+    font-size: 26pt;
+    padding-top: 20px;
+  }
+
   .icon-container {
     position: relative;
-    width: 50px; 
-    height: 50px; 
+    width: 40px; 
+    height: 40px; 
   }
 
   .skill-icon {
@@ -221,6 +236,23 @@ progress[value]::-moz-progress-bar {
     transform: translate(-50%, -50%); 
     width: 20px; 
     height: 20px; 
+  }
+
+  .card {
+    max-width: 500px !important;
+    border-radius: 10px;
+    background-color: #faf8fa08 !important;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid rgba(91, 21, 172, 0.747);
+    color: white;
+  }
+
+  .language-icons {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
   }
 }
 

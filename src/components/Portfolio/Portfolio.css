@@ -1,0 +1,63 @@
+.portfolio-container {
+    padding: 20px;
+}
+
+.custom-card {
+    width: 100%;
+    max-width: 400px; /* ขนาดสูงสุดของการ์ด */
+    margin: 10px;
+    border: none; /* ลบขอบการ์ด */
+    background-color: #60237640; /* พื้นหลังการ์ด */
+    color: white; /* สีข้อความ */
+    border-radius: 10px; /* มุมโค้ง */
+    overflow: hidden; /* ป้องกันไม่ให้เนื้อหาล้นออกจากมุมโค้ง */
+}
+
+.carousel-item img {
+    max-height: 300px; /* ความสูงสูงสุดของภาพ */
+    object-fit: cover; /* ปรับการแสดงผลของภาพให้พอดีกับพื้นที่ */
+    width: 100%; /* กำหนดความกว้างให้เต็มการ์ด */
+    border-radius: 10px 10px 0 0; /* มุมโค้งเฉพาะด้านบน */
+}
+
+.custom-card-body {
+    padding: 15px; /* ระยะห่างภายในการ์ด */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+.card-title {
+    font-size: 1.5rem; /* ขนาดตัวอักษรชื่อโปรเจ็ค */
+    margin-bottom: 0.5rem; /* เว้นระยะห่างจากด้านล่าง */
+}
+
+.card-text {
+    font-size: 1rem; /* ขนาดตัวอักษรสำหรับคำอธิบาย */
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* จัดกลางปุ่ม */
+    margin-top: 10px; /* เว้นระยะห่างด้านบนของปุ่ม */
+    max-width: 100%;
+}
+
+.btn {
+    flex: 1; /* ปรับให้ปุ่มมีขนาดเท่ากัน */
+    margin: 0 5px; /* เว้นระยะห่างระหว่างปุ่ม */
+    border-radius: 5px; /* มุมโค้งของปุ่ม */
+    transition: background-color 0.3s; /* เพิ่มการเปลี่ยนสีเมื่อเลื่อนเมาส์ */
+    background-color: #ad7ae7;
+}
+
+.btn:hover {
+    background-color: #4d335e;; /* สีเมื่อเลื่อนเมาส์เหนือปุ่ม */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* สีพื้นหลังของปุ่ม Demo */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* สีเมื่อเลื่อนเมาส์เหนือปุ่ม */
+}

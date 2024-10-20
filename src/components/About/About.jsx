@@ -52,7 +52,7 @@ function About() {
         <p className='tech-header text-center'>Languages</p>
         <div className="language-container">
           <div className="language-details text-center d-flex justify-content-center">
-            <div className="col-md-10 col-10 d-flex justify-content-center text-center skill-item">
+            <div className="col-md-8 col-10 d-flex justify-content-center text-center skill-item">
               <div className="card skill-card">
                 <div className="language-info">
                   <p>Thai: <span className="language-level">Native</span></p>
