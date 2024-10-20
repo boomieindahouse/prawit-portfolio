@@ -7,8 +7,8 @@
     padding-top: 50px;
 }
 
-.portfolio-container p {
-    text-align: center;
+.portfolio-description {
     font-size: 20pt;
+    text-align: center;
     font-weight: 300;
 }
