@@ -2,8 +2,8 @@
 
 This is my personal portfolio showcasing my skills, projects, and experience as a Frontend Developer.
 
-## Demo
-You can view the live website [here](https://your-portfolio.vercel.app).
+## [Demo](https://your-portfolio.vercel.app).
+<!-- You can view the live website [here](https://your-portfolio.vercel.app). -->
 
 ## Technologies Used
 - **React.js** for building the components.
