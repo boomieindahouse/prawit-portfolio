@@ -108,6 +108,12 @@
     position: relative;
     right: 20%;
   }
+  
+  .intro-me {
+    visibility: visible;
+    opacity: 1;
+    transform: none; 
+}
 
   .contact-button {
     display: none;

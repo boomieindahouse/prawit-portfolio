@@ -4,22 +4,22 @@ import Star from '../bg/Stars';
 import '../Homepage/Intro.css';
 
 function Intro() {
-    const introMeRef = useRef(null); // สร้าง ref สำหรับ .intro-me
+    const introMeRef = useRef(null); 
     const [isVisible, setIsVisible] = useState(false);
 
     const handleScroll = () => {
-        const rect = introMeRef.current.getBoundingClientRect(); // ตรวจสอบตำแหน่งของ intro-me
+        const rect = introMeRef.current.getBoundingClientRect(); 
         if (rect.top < window.innerHeight && rect.bottom >= 0) {
-            setIsVisible(true); // ถ้าเข้ามาใน viewport ให้ตั้งค่าเป็น true
+            setIsVisible(true);
         } else {
-            setIsVisible(false); // ถ้าออกจาก viewport ให้ตั้งค่าเป็น false
+            setIsVisible(false); 
         }
     };
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll); // ฟังการเลื่อน
+        window.addEventListener('scroll', handleScroll); 
         return () => {
-            window.removeEventListener('scroll', handleScroll); // ลบ event listener เมื่อ component ถูก unmount
+            window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
