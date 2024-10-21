@@ -22,3 +22,11 @@
 .footer p{
   margin-bottom: unset;
 }
+
+/* Responsive Media Queries */
+/* sm display responsive */
+@media (max-width: 767px) {
+  .footer p {
+    font-size: 10pt;
+  }
+}
