@@ -82,13 +82,13 @@ export const languageSkills = [
   { 
     name: 'Listen', 
     level: 70, 
-    icon: "/public/icons/listen.png", 
+    icon: "/listen.png", 
     label: 'Intermediate' 
   },
   { 
     name: 'Speak', 
     level: 50, 
-    icon: "/public/icons/speak.png", 
+    icon: "/icons/speak.png", 
     label: 'Novice' 
   }
 ];
