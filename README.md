@@ -2,8 +2,12 @@
 
 This is my personal portfolio showcasing my skills, projects, and experience as a Frontend Developer.
 
+<div style="display: flex; align-items: center; justify-content: space-around;">
+  <img align="center" src="https://github.com/boomieindahouse/prawit-portfolio/blob/main/images/readme-img.png?raw=true" alt="Alt Text" style="width: 500px; height: auto;" />
+  <img align="center" src="https://github.com/boomieindahouse/prawit-portfolio/blob/main/images/readme-img2.png?raw=true" alt="Alt Text" style="width: 190px; height: auto;" />
+</div>
+
 You can view the live website. [Demo](https://boomieindahouse.vercel.app)
-<!-- You can view the live website [here](https://your-portfolio.vercel.app). -->
 
 ## Technologies Used
 - **React.js** for building the components.
