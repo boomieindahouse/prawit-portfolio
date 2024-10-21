@@ -20,10 +20,20 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleClickOutside = (event) => {
+    const menu = document.querySelector('.show-menu');
+    const toggleButton = document.querySelector('.menu-toggle');
+    if (menu && !menu.contains(event.target) && !toggleButton.contains(event.target)) {
+      setIsMenuOpen(false);
+    }
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('click', handleClickOutside); // เพิ่มตัวจัดการเหตุการณ์คลิก
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('click', handleClickOutside); // ลบตัวจัดการเหตุการณ์คลิก
     };
   }, []);
 
