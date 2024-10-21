@@ -1,8 +1,8 @@
-<h1> My Portfolio </h1>
+# My Portfolio 
 
 This is my personal portfolio showcasing my skills, projects, and experience as a Frontend Developer.
 
-## [Demo](https://boomieindahouse.vercel.app)
+### [Demo](https://boomieindahouse.vercel.app)
 <!-- You can view the live website [here](https://your-portfolio.vercel.app). -->
 
 ## Technologies Used
