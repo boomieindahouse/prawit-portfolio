@@ -17,12 +17,15 @@ You can view the live website. [Demo](https://boomieindahouse.vercel.app)
 
 ## Installation
 If you want to run the project locally, follow these steps:
-1. Clone the repository:
+1. Clone the repository: </br>
    `git clone https://github.com/yourusername/portfolio.git`
-2. Navigate to the project directory:
+   
+3. Navigate to the project directory:</br>
    `cd portfolio`
-3. Install dependencies:
+   
+5. Install dependencies:</br>
    `npm install`
-4. Run the development server:
+   
+7. Run the development server:</br>
    `npm run dev`
 
