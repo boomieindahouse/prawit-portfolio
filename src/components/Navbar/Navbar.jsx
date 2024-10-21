@@ -32,7 +32,9 @@ function Navbar() {
       <div className="logo-container">
         <img src={logo} alt="Logo" className="navbar-brand" />
       </div>
-      <div className="menu-toggle" onClick={toggleMenu}>☰</div>
+      <div className="menu-toggle" onClick={toggleMenu}>
+        {isMenuOpen ? '✖' : '☰'}
+      </div>
       <div className={`show-menu ${isMenuOpen ? 'active' : ''}`}>
         <NavLink to="/home" className="nav-link" activeClassName="active">
           Home
