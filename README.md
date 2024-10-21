@@ -11,13 +11,6 @@ You can view the live website [here](https://your-portfolio.vercel.app).
 - **React Router** for navigating between pages.
 - **Vercel** for deployment.
 
-## Sections
-1. **Home**: Brief introduction and a welcoming message.
-2. **About**: Information about my background and interests.
-3. **Portfolio**: Display of my past projects with project details.
-4. **Skills**: Visual representation of my skills in HTML, CSS, JavaScript, React, and more.
-5. **Resume**: Downloadable PDF of my resume.
-
 ## Installation
 If you want to run the project locally, follow these steps:
 1. Clone the repository:
