@@ -34,7 +34,7 @@ function Navbar() {
       </div>
       <div className="menu-toggle" onClick={toggleMenu}>☰</div>
       <div className={`show-menu ${isMenuOpen ? 'active' : ''}`}>
-        <NavLink to="/" className="nav-link" activeClassName="active">
+        <NavLink to="/home" className="nav-link" activeClassName="active">
           Home
         </NavLink>
         <NavLink to="/about" className="nav-link" activeClassName="active">
@@ -43,7 +43,8 @@ function Navbar() {
         <NavLink to="/portfolio" className="nav-link" activeClassName="active">
           Portfolio
         </NavLink>
-        <a href="/src/assets/my-resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-link">Resume</a>      </div>
+        <NavLink to="/src/assets/my-resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-link">Resume</NavLink>
+      </div>
     </nav>
   );
 }

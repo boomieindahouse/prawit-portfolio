@@ -17,17 +17,33 @@
 }
 
 .navbar .nav-link {
+  position: relative;
   color: #fff;
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
-  margin: 0 15px; 
-  padding: 10px 0; 
+  margin: 0 30px;  
+}
+
+.navbar .nav-link::after {
+  content: ''; /* pseudo-element */
+  position: absolute; 
+  left: 0%; 
+  bottom: 0; 
+  width: 0; 
+  height: 4px; 
+  background-color: var(--highlight-color); 
+  transition: width 0.5s ease, left 0.3s ease; 
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .navbar .nav-link:hover {
-  color: var(--hover-color);
+  color: rgb(212, 187, 236);
 }
 
 .navbar .nav-link.active {
