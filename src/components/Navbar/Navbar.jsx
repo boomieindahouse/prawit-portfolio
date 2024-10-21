@@ -43,7 +43,7 @@ function Navbar() {
         <NavLink to="/portfolio" className="nav-link" activeClassName="active">
           Portfolio
         </NavLink>
-        <NavLink to="/src/assets/my-resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-link">Resume</NavLink>
+        <NavLink to="../public/my-resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-link">Resume</NavLink>
       </div>
     </nav>
   );

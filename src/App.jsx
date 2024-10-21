@@ -7,7 +7,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Footer from './components/Footer/Footer';
 import Loader from './components/Loader/Loader';
 import Star from './components/bg/Stars';
-import resumePDF from './assets/my-resume.pdf';
+import resumePDF from '../public/my-resume.pdf';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
