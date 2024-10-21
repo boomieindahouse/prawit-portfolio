@@ -8,16 +8,16 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleScroll = () => {
-    const offset = window.scrollY; 
-    if (offset > 100) { 
-      setIsScrolled(true); 
+    const offset = window.scrollY;
+    if (offset > 100) {
+      setIsScrolled(true);
     } else {
       setIsScrolled(false);
     }
   };
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); 
+    setIsMenuOpen(!isMenuOpen);
   };
 
   useEffect(() => {
@@ -34,10 +34,16 @@ function Navbar() {
       </div>
       <div className="menu-toggle" onClick={toggleMenu}>☰</div>
       <div className={`show-menu ${isMenuOpen ? 'active' : ''}`}>
-        <NavLink to="/" className="nav-link" activeClassName="active">Home</NavLink>
-        <NavLink to="/about" className="nav-link" activeClassName="active">About</NavLink>
-        <NavLink to="/portfolio" className="nav-link" activeClassName="active">Portfolio</NavLink>
-      </div>
+        <NavLink to="/" className="nav-link" activeClassName="active">
+          Home
+        </NavLink>
+        <NavLink to="/about" className="nav-link" activeClassName="active">
+          About
+        </NavLink>
+        <NavLink to="/portfolio" className="nav-link" activeClassName="active">
+          Portfolio
+        </NavLink>
+        <a href="/src/assets/my-resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-link">Resume</a>      </div>
     </nav>
   );
 }

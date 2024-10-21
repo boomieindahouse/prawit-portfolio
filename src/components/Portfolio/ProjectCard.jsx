@@ -46,7 +46,7 @@ function ProjectCard({ project }) {
       <div className="custom-card-body">
         <h1 className="project-card-title">{project.name}</h1>
         <p className="project-card-text">{project.desc}</p>
-        <p><strong>Technologies:</strong> {project.dev.join(', ')}</p>
+        <p><strong>Development:</strong> {project.dev.join(', ')}</p>
       </div>
       <div className="button-container">
         <a href={project.github} className="btn-github" target="_blank" rel="noopener noreferrer">

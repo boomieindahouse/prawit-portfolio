@@ -1,14 +1,47 @@
 .portfolio-container {
-    padding: 20px;
+  padding: 20px;
 }
 
-.portfolio-container h1 {
-    text-align: center;
-    padding-top: 50px;
+.portfolio-heading {
+  text-align: center;
+  padding-top: 50px;
+  color: var(--highlight-color);
 }
 
 .portfolio-description {
-    font-size: 20pt;
-    text-align: center;
-    font-weight: 300;
+  font-size: 20pt;
+  text-align: center;
+  font-weight: 300;
+}
+
+.project-card {
+  max-width: 50%;
+  gap: 40px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .row > * {
+    padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+  }
+
+  .project-card {
+    flex-direction: column !important;
+    max-width: 90%;
+  }
+}
+
+/* ipad mini, air responsive */
+@media (min-width: 768px) and (max-width: 1370px) {
+  .project-card {
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-md-6 {
+        flex: 0 0 auto;
+        width: 80%;
+        height: 30%;
+    }
 }
