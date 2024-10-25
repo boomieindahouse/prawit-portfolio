@@ -38,6 +38,11 @@ export const skillsData = [
     name: "Bootstrap",
     level: 40,
     icon: "/icons/bootstrap.png",
+  },
+  {
+    name: "Tailwind",
+    level: 30,
+    icon: "/icons/tailwind.png",
   }
 ];
 
