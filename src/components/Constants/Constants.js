@@ -165,6 +165,29 @@ export const portfolios = [
     ],
     desc: `This project is for resort management. It was created using the AltoRouter framework for routing.`,
     github: "https://github.com/boomieindahouse/resort-main",
+  },
+  {
+    id: 4,
+    name: "Ecommerce Front-End",
+    pics: [
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png",
+      "8.png",
+    ],
+    dev: ["React Vite", "TailwindCSS"],
+    functions: [
+      "Able to book resort rooms.",
+      "Capable of managing resort rooms.",
+      "Capable of managing resort staff.",
+      "Able to make payments for room bookings through the website.",
+    ],
+    desc: `This project is an e-commerce website frontend developed to practice writing in React and using Tailwind CSS.`,
+    github: "https://github.com/boomieindahouse/ecommerce",
   }
 ];
 
