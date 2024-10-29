@@ -1,12 +1,12 @@
 export const skillsData = [
   {
     name: "HTML",
-    level: 50,
+    level: 60,
     icon: "/icons/html.png",
   },
   {
     name: "CSS",
-    level: 60,
+    level: 70,
     icon: "/icons/css.png",
   },
   {
@@ -16,8 +16,13 @@ export const skillsData = [
   },
   {
     name: "React",
-    level: 30,
+    level: 40,
     icon: "/icons/react.png",
+  },
+  {
+    name: "NextJs",
+    level: 25,
+    icon: "/icons/next.png",
   },
   {
     name: "PHP",
@@ -30,18 +35,23 @@ export const skillsData = [
     icon: "/icons/sql.png",
   },
   {
+    name: "MongoDB",
+    level: 20,
+    icon: "/icons/mongodb.png",
+  },
+  {
     name: "Flutter",
     level: 30,
     icon: "/icons/flutter.png",
   },
   {
     name: "Bootstrap",
-    level: 40,
+    level: 35,
     icon: "/icons/bootstrap.png",
   },
   {
     name: "Tailwind",
-    level: 30,
+    level: 50,
     icon: "/icons/tailwind.png",
   }
 ];
@@ -58,6 +68,10 @@ export const toolsData = [
   {
     name: "Git",
     icon: "/icons/git.png",
+  },
+  {
+    name: "Postman",
+    icon: "/icons/postman.png",
   },
   {
     name: "Figma",
