@@ -10,6 +10,7 @@ import Star from './components/bg/Stars';
 import resumePDF from '../public/my-resume.pdf';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Star />
         {loading ? (
