@@ -42,7 +42,7 @@ body {
 
 /* กำหนดสีและลักษณะของ thumb (ส่วนที่สามารถเลื่อน) */
 ::-webkit-scrollbar-thumb {
-  background: rgba(156, 110, 202, 0.715); /* เปลี่ยนสีที่นี่ */
+  background: rgba(255, 255, 255, 0.55); /* เปลี่ยนสีที่นี่ */
   border-radius: 12px; 
 }
 
@@ -53,6 +53,6 @@ body {
 
 /* กำหนดสีพื้นหลังของ scrollbar track (ส่วนที่อยู่หลัง thumb) */
 ::-webkit-scrollbar-track {
-  background: rgba(89, 26, 183, 0.868); /* เปลี่ยนสีที่นี่ */
+  background: rgba(66, 32, 116, 0.664); /* เปลี่ยนสีที่นี่ */
 }
 
