@@ -46,16 +46,39 @@ function Navbar() {
         {isMenuOpen ? '✖' : '☰'}
       </div>
       <div className={`show-menu ${isMenuOpen ? 'active' : ''}`}>
-        <NavLink to="/home" className="nav-link" activeClassName="active">
+        <NavLink
+          to="/home"
+          className="nav-link"
+          activeClassName="active"
+          onClick={() => setIsMenuOpen(false)}
+        >
           Home
         </NavLink>
-        <NavLink to="/about" className="nav-link" activeClassName="active">
+        <NavLink
+          to="/about"
+          className="nav-link"
+          activeClassName="active"
+          onClick={() => setIsMenuOpen(false)}
+        >
           About
         </NavLink>
-        <NavLink to="/portfolio" className="nav-link" activeClassName="active">
+        <NavLink
+          to="/portfolio"
+          className="nav-link"
+          activeClassName="active"
+          onClick={() => setIsMenuOpen(false)}
+        >
           Portfolio
         </NavLink>
-        <NavLink to="/my-resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-link">Resume</NavLink>
+        <NavLink
+          to="/my-resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-link"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          Resume
+        </NavLink>
       </div>
     </nav>
   );
