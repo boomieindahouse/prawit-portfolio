@@ -25,7 +25,9 @@
 }
 
 body {
-  background-image: radial-gradient(circle, rgb(42, 29, 63), rgb(23, 5, 43));
+  background-image: linear-gradient(90deg, rgb(45, 22, 63) 0%, rgb(61, 23, 62) 29%, rgb(63, 28, 66) 61%, rgb(45, 14, 61) 100%);
+
+  /* background-image: radial-gradient(circle, rgb(42, 29, 63), rgb(23, 5, 43)); */
   color: #ffffff; 
   font-family: "Josefin Sans", sans-serif;
 } 
