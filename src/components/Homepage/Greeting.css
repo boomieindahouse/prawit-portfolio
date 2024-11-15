@@ -110,7 +110,7 @@
 @media (max-width: 768px) {
   .greeting {
     height: 80vh;
-    padding: 20px; 
+    padding: 40px; 
     justify-content: center;
     display: flex;
     flex-direction: column; 
