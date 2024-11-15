@@ -53,18 +53,20 @@
   }
   
   .btn-github {
-    background-color: #6f4881; 
+    background-color: #bd88f23a;
     border: none; 
     color: white; 
     padding: 10px 20px; 
     text-align: center; 
     text-decoration: none; 
     border-radius: 5px; 
-    transition: background-color 0.3s;
+    /* transition: background-color 0.3s; */
+    transition: box-shadow 0.3s ease;
   }
   
   .btn-github:hover {
     background-color: #6f488173;
+    box-shadow: 0 0 10px rgb(214, 184, 230), 0 0 20px rgb(119, 57, 147);
   }
 
   /* ipad mini, air responsive */
