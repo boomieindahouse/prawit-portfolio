@@ -27,7 +27,7 @@
 }
 
 .contact-button .btn {
-  background-color: #bd88f2;
+  background-color: #bd88f22a;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -39,8 +39,8 @@
 }
 
 .contact-button .btn:hover {
-  background-color: #bd88f2;
-  box-shadow: 0 0 10px rgb(229, 147, 147), 0 0 20px rgb(149, 68, 187);
+  background-color: #bd88f263;
+  box-shadow: 0 0 10px rgb(236, 227, 227), 0 0 20px rgb(149, 68, 187);
 }
 
 .intro-me {
