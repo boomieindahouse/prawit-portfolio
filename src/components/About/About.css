@@ -55,8 +55,8 @@
 
 .card:hover {
   transform: translateY(-10px);
-  border-color: rgba(91, 21, 172, 0.9);
-  background-color: #b772dfa4 !important;
+  /* border-color: rgba(91, 21, 172, 0.9); */
+  background-color: #3c28503e !important;
 }
 
 .tech-icon {
@@ -83,7 +83,7 @@
 
 .card:hover .card-title {
   opacity: 1;
-  color: rgb(223, 163, 241);
+  color: rgb(255, 255, 255);
   font-size: 15pt;
   font-weight: 400;
 }
