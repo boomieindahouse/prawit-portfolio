@@ -47,10 +47,12 @@ function Intro() {
                     </div>
                 </div>
             </div>
+            <div className="mailto">
             <div className="contact-button text-center mt-4">
-                <a href="mailto:prawitsanat@hotmail.com" className="btn">
+                <a href="mailto:prawitsanat@hotmail.com" className="btn-mail">
                     Get In Touch
                 </a>
+            </div>
             </div>
         </section>
     );

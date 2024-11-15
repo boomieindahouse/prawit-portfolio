@@ -26,7 +26,7 @@
   padding: 40px;
 }
 
-.contact-button .btn {
+.contact-button .btn-mail {
   background-color: #bd88f22a;
   color: white;
   padding: 10px 20px;
@@ -38,7 +38,7 @@
   transition: box-shadow 0.3s ease;
 }
 
-.contact-button .btn:hover {
+.contact-button .btn-mail:hover {
   background-color: #bd88f263;
   box-shadow: 0 0 10px rgb(236, 227, 227), 0 0 20px rgb(149, 68, 187);
 }
