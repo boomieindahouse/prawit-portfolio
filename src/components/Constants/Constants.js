@@ -126,7 +126,7 @@ export const portfolios = [
       "7.png",
       "8.png",
     ],
-    dev: ["Altorouter php", "Javascript", "CSS", "MySql"],
+    dev: ["Altorouter PHP", "Javascript", "CSS", "MySql"],
     functions: [
       "Authentication: Users can sign up, log in, and log out.",
       "Profile Management: Users can update their profile information and profile picture.",
@@ -170,7 +170,7 @@ export const portfolios = [
       "5.png",
       "6.png",
     ],
-    dev: ["Altorouter php", "Javascript", "CSS", "MySql"],
+    dev: ["Altorouter PHP", "Javascript", "CSS", "MySql"],
     functions: [
       "Able to book resort rooms.",
       "Capable of managing resort rooms.",
