@@ -11,7 +11,8 @@ function Portfolio() {
       <p className="portfolio-description">Here are some of the projects I&apos;ve worked on recently.</p>
       <Row className="justify-content-center">
         {portfolios.map((project) => (
-          <Col key={project.id} md={4} className="mb-4 d-flex justify-content-center">
+          /* if i have new project, make col to md 4 for reshape the column */
+          <Col key={project.id} md={5} className="mb-4 d-flex justify-content-center">
             <ProjectCard project={project} />
           </Col>
         ))}
