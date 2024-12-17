@@ -1,5 +1,5 @@
 import avtprogramming from '../../assets/img/avt-programming.png';
-import { skillsData, toolsData, languageSkills } from '../Constants/Constants';
+import { skillsData, frameworkData, toolsData, languageSkills } from '../Constants/Constants';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import '../About/About.css';
@@ -21,6 +21,22 @@ function About() {
         <p className='tech-header text-center'>Skills</p>
         <div className="techset row w-100 justify-content-center">
           {skillsData.map((skill, index) => (
+            <div key={index} className="col-md-3 col-4 text-center tech-card">
+              <div className="card shadow-sm">
+                <div className="card-body">
+                  <img src={skill.icon} alt={skill.name} className="tech-icon" />
+                  <h5 className="card-title mt-3">{skill.name}</h5>
+                </div>
+                <progress value={skill.level} max="100" className="progress-bar"></progress>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ส่วนแสดง framework */}
+        <p className='tech-header text-center'>Framework</p>
+        <div className="techset row w-100 justify-content-center">
+          {frameworkData.map((skill, index) => (
             <div key={index} className="col-md-3 col-4 text-center tech-card">
               <div className="card shadow-sm">
                 <div className="card-body">

@@ -15,16 +15,6 @@ export const skillsData = [
     icon: "/icons/javascript.png",
   },
   {
-    name: "React",
-    level: 40,
-    icon: "/icons/react.png",
-  },
-  {
-    name: "NextJs",
-    level: 25,
-    icon: "/icons/next.png",
-  },
-  {
     name: "PHP",
     level: 30,
     icon: "/icons/php.png",
@@ -38,29 +28,43 @@ export const skillsData = [
     name: "MongoDB",
     level: 20,
     icon: "/icons/mongodb.png",
+  }
+];
+
+export const frameworkData = [
+  {
+    name: "React",
+    level: 45,
+    icon: "/icons/react.png",
+  },
+  {
+    name: "NextJs",
+    level: 40,
+    icon: "/icons/next.png",
+  },
+  {
+    name: "NuxtJS",
+    level: 30,
+    icon: "/icons/nuxt.png",
+  },
+  {
+    name: "Bootstrap",
+    level: 30,
+    icon: "/icons/bootstrap.png",
+  },
+  {
+    name: "Tailwind",
+    level: 60,
+    icon: "/icons/tailwind.png",
   },
   {
     name: "Flutter",
     level: 30,
     icon: "/icons/flutter.png",
-  },
-  {
-    name: "Bootstrap",
-    level: 35,
-    icon: "/icons/bootstrap.png",
-  },
-  {
-    name: "Tailwind",
-    level: 50,
-    icon: "/icons/tailwind.png",
   }
 ];
 
 export const toolsData = [
-  {
-    name: "Windows",
-    icon: "/icons/windows.png",
-  },
   {
     name: "vsCode",
     icon: "/icons/vscode.png",
@@ -75,13 +79,15 @@ export const toolsData = [
   },
   {
     name: "Figma",
-    level: "Beginner",
     icon: "/icons/figma.png",
   },
   {
-    name: "Eclipse",
-    level: "Beginner",
-    icon: "/icons/eclipse.png",
+    name: "Photoshop",
+    icon: "/icons/ps.png",
+  },
+  {
+    name: "Illustrator",
+    icon: "/icons/ai.png",
   }
 ];
 
