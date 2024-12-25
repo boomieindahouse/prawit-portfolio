@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom'; // นำเข้า useNavigate
 import logo from '../../assets/img/logo.png';
 import '../Navbar/Navbar.css';
 import { useEffect, useState } from 'react';
@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate(); // สร้าง instance ของ useNavigate
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -28,6 +29,10 @@ function Navbar() {
     }
   };
 
+  const handleLogoClick = () => {
+    navigate('/home'); // เมื่อคลิกที่โลโก้จะพาไปที่หน้า /home
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('click', handleClickOutside); // เพิ่มตัวจัดการเหตุการณ์คลิก
@@ -39,7 +44,7 @@ function Navbar() {
 
   return (
     <nav className={`navbar d-flex justify-content-between align-items-center px-5 ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="logo-container">
+      <div className="logo-container" onClick={handleLogoClick}> {/* เพิ่ม onClick ที่โลโก้ */}
         <img src={logo} alt="Logo" className="navbar-brand" />
       </div>
       <div className="menu-toggle" onClick={toggleMenu}>

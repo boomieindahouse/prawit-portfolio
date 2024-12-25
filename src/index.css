@@ -24,6 +24,10 @@
   --btn-color: rgba(156, 110, 202, 0.715);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url('../public/newbg.jpg');
   background-size: cover;

@@ -183,7 +183,7 @@ export const portfolios = [
       "Able to make payments for room bookings through the website.",
     ],
     desc: `This project is for resort management. It was created using the AltoRouter framework for routing.`,
-    github: "https://github.com/boomieindahouse/resort-main",
+    github: "*",
   },
   {
     id: 4,
