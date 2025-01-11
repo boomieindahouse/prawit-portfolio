@@ -7,7 +7,8 @@ This is my personal portfolio showcasing my skills, projects, and experience as 
   <img align="center" src="https://github.com/boomieindahouse/prawit-portfolio/blob/main/images/readme-img2.png?raw=true" alt="Alt Text" style="width: 190px; height: auto;" />
 </div>
 
-You can view the live website. <a href="https://boomieindahouse.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a>
+You can view the live website. [Demo](https://boomieindahouse.vercel.app)
+
 
 ## Technologies Used
 - **React.js** for building the components.
